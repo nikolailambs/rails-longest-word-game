@@ -1,0 +1,46 @@
+// Place all the styles related to the LongestWord controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #BCBCBC;
+  color: #FFDF0A;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #838383;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px #323232;
+  padding: 200px 100px;
+}
+
+a {
+  text-decoration: none;
+  color: #FD954F;
+  border: 2px solid #FD954F;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+a:hover {
+  color: #909090;
+  border: 2px solid #909090;
+}
+
+
+.game {
+  margin-top: 10px;
+}

@@ -1,0 +1,21 @@
+
+<div class="container">
+  <div class="game card">
+    <h1>Lets play a game</h1>
+    <h3>Try to build a word with the those 10 letters</h3>
+
+    <ul>
+      <% @word_array.each do |letter| %>
+      <li><h2><%= letter %></h2></li>
+      <% end %>
+      <form action="/score">
+        <label for="result">Your word:</label>
+        <input type="text" id="result" name="query">
+        <input type="submit" value="submit">
+        <input type="hidden" name="timestamp" value="<%= @timestamp %>">
+        <input type="hidden" name="word" value="<%= @word_array %>">
+        <input type="hidden" name="endTime" value="<%= Time.now %>">
+      </form>
+    </ul>
+  </div>
+</div>
